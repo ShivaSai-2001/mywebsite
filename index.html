@@ -1,0 +1,202 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/daf182ed31.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <img src="rbi.jpg.png" width="500" ,height="600" align="right" class="image">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> CSE-STUDENT | FRESHER </p>
+                <h1>Hi, I'm <span>Vishwanatham Shiva Sai</span></h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------about------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.jpg.png" alt="" width="300" ,height="300">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me </h1>
+                    <p> As a Fresher student in Computer Science and Engineering. I am a passionate and
+                        dedicated individual with a strong focus on learning growth. My skills in basic web
+                        development and DataStrutures and Algorithms along with my love for coding ,make me a 
+                        valuable addition to anyteam.With strong communication and collaboration skills.I am 
+                        committed to delivering high quality work and contributing to the success of my 
+                        organization</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('Projects')"> Projects</p>
+                        <p class="tab-links" onclick="opentab('Education')"> Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span> Programming Languages</span><br>Java,C,C++,Python</li>
+                            <li><span> Web Technologies</span><br>HTML,CSS,JavaScript</li>
+                            <li><span> Database Technologies</span><br>MySQL</li>
+                            <li><span> Operating Systems</span><br>Windows,Ubuntu & Andriod</li>
+                            <li><span> Development Tools</span><br>Visual Studio code,Jupityer Notebook,Git</li>
+                            <li><span> Others</span><br>Data Structures and Algorithms,Mathematics <br>Computer
+                                Architecture,
+                                Discrete Mathematics, Complier Design </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span> Signs - Of - Ageing [2021]</span><br>A model to classify and localize different Signs of Ageing such as Puffy Eyes, Wrinkles, Dark Spots etc on the
+                                face.
+                                The Project requires knowledge of various domains Use image processing techniques to process the image as per
+                                requirements.The model preferred to work upon is EfficientNet which will detect signs of ageing like puffy eyes,
+                                wrinkles, darkspots on the image.It should overlay bounding boxes around detected ageing signs.
+                                <br> <span> Technologies Used : </span>Python and Machine Learning Algorithms
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span> 2019-Current</span><br>B.Tech CSE at JNTUH University College of <br>
+                                Engineering Sulthanpur,Sangareddy.</li>
+                            <li><span> 2017-2019</span><br>Intermediate at SR Junior College, Karimnagar</li>
+                            <li><span> 2017</span><br>Celestial High School, Siddipet</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-----------------------Services------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code fa-beat-fade"></i>
+                    <h2> Web Design</h2>
+                    <p style="font-size: medium;">Web designing is the process of planning, conceptualizing, and implementing the plan for
+                        designing a website in a way that is functional and offers a good user experience
+                         User experience is central to the web designing process. Websites have an array of 
+                         elements presented in ways that make them easy to navigate.</p>
+                    <a href="https://www.interaction-design.org/literature/topics/web-design">see more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java fa-beat-fade"></i>
+                    <h2> Java </h2>
+                    <p style="font-size: medium;">Java is a widely used object-oriented programming language and software platform that runs
+                         on billions of devices, including notebook computers, mobile devices, gaming consoles,
+                          medical devices and many others. The rules and syntax of Java are based on the C and 
+                          C++ languages.</p>
+                    <a href="https://www.geeksforgeeks.org/introduction-to-java/">see more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-code-compare fa-beat-fade"></i>
+                    <h2> DataStructures and Algorithms </h2>
+                    <p style="font-size: medium;">A data structure is a method of organizing data in a virtual system. Think of sequences of 
+                        numbers, or tables of data: these are both well-defined <br>data structures. An algorithm is a 
+                        sequence of steps executed by a computer that takes an input and transforms it into a target
+                         output.</p>
+                    <a href="https://www.geeksforgeeks.org/data-structures/">see more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Contact------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me </h1>
+                    <p> <i class="fa-solid fa-envelope"></i>vishwanathamshivasai2001@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> 9866126151</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vishwanatham-shivasai-83b80b18b"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="./Resume_sharing (4).pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="myform" action="#" onclick="return message()">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
++            <p>Copyright (C) VS <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby9DgEETiAEwKR8JZT4zN0zVUHD9CR5jXzzJi1LlXTbCTy9hPu4hYSq8ZCHqSo11FXhlA/exec'
+        const form = document.forms['myform']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+
+</html>
